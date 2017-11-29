@@ -123,12 +123,21 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.37</version>
     </dependency>
+
+    <!--连接池-->
     <dependency>
       <groupId>c3p0</groupId>
       <artifactId>c3p0</artifactId>
       <version>0.9.1.2</version>
     </dependency>
 
+    <!-- 图片处理 -->
+    <!-- https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
+    <dependency>
+      <groupId>net.coobird</groupId>
+      <artifactId>thumbnailator</artifactId>
+      <version>0.4.8</version>
+    </dependency>
 
 
   </dependencies>
