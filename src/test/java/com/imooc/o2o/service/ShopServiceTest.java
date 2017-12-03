@@ -56,7 +56,7 @@ public class ShopServiceTest extends BaseTest {
         File shopImg = new File("/Users/baidu/work/image/xiaohuangren.jpg");
         InputStream is = new FileInputStream(shopImg);
         ImageHolder imageHolder = new ImageHolder(shopImg.getName(),is);
-        ShopExecution se = shopService.addShop(shop,imageHolder);
+        ShopExecution se = shopService.addShop(shop,is,shopImg.getName());
         assertEquals(ShopStateEnum.CHECK,se.getState());
 
 

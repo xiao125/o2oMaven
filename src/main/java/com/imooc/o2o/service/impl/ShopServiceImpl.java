@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
+import java.io.InputStream;
 import java.util.Date;
 
 /**
@@ -26,7 +27,7 @@ public class ShopServiceImpl implements ShopService{
     @Autowired
     private ShopDao shopDao;
 
-    public ShopExecution addShop(Shop shop, ImageHolder thumbnail) throws ShopOperationException {
+    public ShopExecution addShop(Shop shop, InputStream shopImgInputStream,String fileName) throws ShopOperationException {
 
         // 空值判断
         if (shop == null){
@@ -40,17 +41,17 @@ public class ShopServiceImpl implements ShopService{
             shop.setCreateTime(new Date());
             shop.setLastEditTime(new Date());
 
-          int effectedNum = shopDao.insertShop(shop);
+          int effectedNum = shopDao.insertShop(shop); //添加新店铺
           if (effectedNum <=0){
 
               throw new ShopOperationException("店铺创建失败");
           }else {
 
-              if (thumbnail.getImage() !=null){
+              if (shopImgInputStream !=null){
 
                   // 存储图片
                   try {
-                      addShopImg(shop,thumbnail);
+                      addShopImg(shop,shopImgInputStream,fileName);
 
                   }catch (Exception e){
 
@@ -75,10 +76,10 @@ public class ShopServiceImpl implements ShopService{
     }
 
 
-    private void addShopImg(Shop shop,ImageHolder thumbnail){
+    private void addShopImg(Shop shop, InputStream shopImageInputStream,String fileName){
 
         String dest = PathUtil.getShopImagePath(shop.getShopId()); //项目图片的子路径
-        String shopImgAddr = ImageUtil.generateThumbnail(thumbnail,dest);  // 获取shop图片目录的相对值路径
+        String shopImgAddr = ImageUtil.generateThumbnail(shopImageInputStream,fileName,dest);  // 获取shop图片目录的相对值路径
 
         shop.setShopImg(shopImgAddr);
 

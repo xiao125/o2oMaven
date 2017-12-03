@@ -10,6 +10,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -52,16 +53,16 @@ public class ImageUtil {
     /**
      * 处理详情图，并返回新生成图片的相对值路径
      *
-     * @param thumbnail
+     * @param thumbnailInputStream
      * @param targetAddr
      * @return
      */
-    public static String generateThumbnail(ImageHolder thumbnail, String targetAddr){
+    public static String generateThumbnail(InputStream thumbnailInputStream, String fileName,String targetAddr){
 
         //获取不重复的随机名
         String realFileName = getRandomFileName();
         // 获取文件的扩展名如png,jpg等
-        String extension = getFileExtension(thumbnail.getImageName());
+        String extension = getFileExtension(fileName);
 
         // 如果目标路径不存在，则自动创建
         makeDirPath(targetAddr);
@@ -75,7 +76,7 @@ public class ImageUtil {
         logger.debug("current complete addr is :" + PathUtil.getImgBasePath() + relativeAddr);
         // 调用Thumbnails生成带有水印的图片
         try {
-            Thumbnails.of(thumbnail.getImage()).size(337,640)
+            Thumbnails.of(thumbnailInputStream).size(337,640)
                     .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")),0.25f)
                     .outputQuality(0.9f).toFile(dest);
 

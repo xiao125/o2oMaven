@@ -8,7 +8,7 @@ import com.imooc.o2o.entity.Shop;
 public interface ShopDao {
 
     /**
-     * 更新店铺信息
+     * 添加店铺信息
      * @param shop
      * @return
      */

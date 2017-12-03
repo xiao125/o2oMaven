@@ -13,7 +13,7 @@ public class PathUtil {
         String basePath="";
         if (os.toLowerCase().startsWith("win")){ //如果是windows,保存在一个目录下
 
-            basePath = "D:/projectdev/image";
+            basePath = "F:/IdeaProjects/img/";
 
 
         }else {
