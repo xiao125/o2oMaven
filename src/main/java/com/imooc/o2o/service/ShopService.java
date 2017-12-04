@@ -35,6 +35,12 @@ public interface ShopService {
     ShopExecution  modifyShop(Shop shop,InputStream shopimgInputstream,String fileName) throws ShopOperationException;
 
 
+    /**
+     * 通过店铺Id获取店铺信息
+     * @param shopId
+     * @return
+     */
+    Shop getByShopId(Long shopId);
 
 
 }
