@@ -24,6 +24,17 @@ public interface ShopService {
     ShopExecution addShop(Shop shop, InputStream shopImgInputStream,String fileName) throws ShopOperationException;
 
 
+    /**
+     * 更新店铺信息，包括对图片的处理
+     * @param shop
+     * @param shopimgInputstream
+     * @param fileName
+     * @return
+     * @throws ShopOperationException
+     */
+    ShopExecution  modifyShop(Shop shop,InputStream shopimgInputstream,String fileName) throws ShopOperationException;
+
+
 
 
 }

@@ -10,7 +10,7 @@ public class PersonInfo {
     // 主键ID
     private Long userId;
     // 用户名称
-    private String naem;
+    private String name;
     // 用户头像
     private String profileImg;
     // 用户邮箱
@@ -36,11 +36,11 @@ public class PersonInfo {
     }
 
     public String getNaem() {
-        return naem;
+        return name;
     }
 
     public void setNaem(String naem) {
-        this.naem = naem;
+        this.name = naem;
     }
 
     public String getProfileImg() {

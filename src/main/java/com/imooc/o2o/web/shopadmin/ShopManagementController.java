@@ -123,7 +123,7 @@ public class ShopManagementController {
         if (shop !=null && shopImg !=null){
 
             PersonInfo owner = new PersonInfo();
-            owner.setUserId(1L);
+            owner.setUserId(1L); //店铺需要关联商家，暂时设置为1
             shop.setOwner(owner);
             ShopExecution se; //返回结果状态
 
