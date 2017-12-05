@@ -79,7 +79,9 @@ public class ShopServiceImpl implements ShopService{
     public ShopExecution modifyShop(Shop shop, InputStream shopimgInputstream, String fileName) throws ShopOperationException {
 
         if (shop ==null && shop.getShopId() == null){
+
             return new ShopExecution(ShopStateEnum.NULL_SHOP);
+
         }else {
 
             // 1.判断是否需要处理图片

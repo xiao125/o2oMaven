@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "shopadmin",method = RequestMethod.GET)
 public class ShopAdminController {
 
+    //完整url： http://127.0.0.1:8080/o2oMaven/shopadmin/shopoperation?shopId=1
    @RequestMapping(value = "/shopoperation")
     public String shopOperation(){
         //转发至店铺注册、编辑页面

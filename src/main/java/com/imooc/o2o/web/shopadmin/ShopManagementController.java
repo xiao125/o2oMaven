@@ -52,7 +52,7 @@ public class ShopManagementController {
     private Map<String,Object> getShopById(HttpServletRequest request){
         Map<String,Object> modelMap = new HashMap<String, Object>();
         Long shopId = HttpServletRequestUtil.getLong(request,"shopId");
-        if (shopId >-1){
+        if (shopId > -1){
 
             try{
                 Shop shop = shopService.getByShopId(shopId); //获取商铺信息
