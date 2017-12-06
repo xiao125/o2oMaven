@@ -9,6 +9,7 @@ function changeVerifyCode(img) {
 }
 
 //识别url中的是否传入shopId参数
+// 例如：http://127.0.0.1:8080/o2oMaven/shopadmin/shopoperation?shopId=1
 function getQueryString(name) {
 
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");

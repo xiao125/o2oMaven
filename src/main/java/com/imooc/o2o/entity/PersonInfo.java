@@ -35,12 +35,12 @@ public class PersonInfo {
         this.userId = userId;
     }
 
-    public String getNaem() {
+    public String getName() {
         return name;
     }
 
-    public void setNaem(String naem) {
-        this.name = naem;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getProfileImg() {
