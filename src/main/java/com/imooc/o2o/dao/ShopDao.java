@@ -25,7 +25,7 @@ public interface ShopDao {
 
 
     /**
-     * 但会queryShopList总数
+     * 返回queryShopList总数
      * @param shopCondition
      * @return
      */

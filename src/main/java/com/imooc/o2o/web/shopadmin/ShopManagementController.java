@@ -49,7 +49,13 @@ public class ShopManagementController {
     private AreaService areaService;
 
 
+    /**
+     * 商店管理页面（进入此页面，需判断是否传入相应的店铺id，否则跳转商店列表页面）
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "getshopmanagementinfo",method = RequestMethod.GET)
+    @ResponseBody
     private Map<String,Object> getShopManagementInfo(HttpServletRequest request){
 
         Map<String,Object> modelMap = new HashMap<String, Object>();
@@ -57,7 +63,7 @@ public class ShopManagementController {
         if (shopId <=0){
 
             Object currentShopObj = request.getSession().getAttribute("currentShop");
-            if (currentShopObj ==null){
+            if (currentShopObj == null){
                 modelMap.put("redirect",true); //重定向页面地址
                 modelMap.put("url","/o2oMaven/shopadmin/shoplist");
             }else {
@@ -86,7 +92,7 @@ public class ShopManagementController {
         Map<String,Object> modelMap = new HashMap<String, Object>();
         PersonInfo user = new PersonInfo();
         user.setUserId(1L); // Userid为1的商铺
-        user.setName("test");
+        user.setName("小红");
         request.getSession().setAttribute("user",user);
         user = (PersonInfo) request.getSession().getAttribute("user");
 
