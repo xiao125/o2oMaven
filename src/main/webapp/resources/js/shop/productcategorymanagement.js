@@ -5,6 +5,7 @@ $(function () {
 
     var listUrl='/o2oMaven/shopadmin/getproductcategorylist';
     var addUrl = '/o2oMaven/shopadmin/addproductcategorys';
+    var deleUrl='/o2oMaven/shopadmin/removeproductcategory';
 
     getList()
     function getList() {
@@ -74,17 +75,44 @@ $(function () {
                     $.toast('提交成功！');
                     getList();
                 } else {
-
                     $.toast('提交失败！');
                 }
-
             }
-
         });
+    });
 
+    //删除按钮分两种（1.列表出现的 2.通过添加按钮动态生成的）
 
-    })
+    //第二种，直接删除，因为没有存储
+    $('.category-wrap').on('click','.row-product-category.temp .delete',
+    function (e) {
+        console.log($(this).parent().parent());
+        $(this).parent().parent().remove();
+    });
 
+    //第一种
+    $('.category-wrap').on('click','.row-product-category.now .delete',
+    function (e) {
+        var target = e.currentTarget;
+        $.confirm('确定么?',function () {
+            $.ajax({
+                url : deleUrl,
+                type : 'POST',
+                data :{
+                    productCategoryId : target.dataset.id
+                },
+                dataType : 'json',
+                success : function (data) {
 
+                    if (data.success){
+                        $.toast('删除成功!');
+                        getList();
+                    }else {
+                        $.toast('删除失败!');
+                    }
+                }
+            });
+        });
+    });
 
 });

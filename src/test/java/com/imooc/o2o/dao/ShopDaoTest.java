@@ -42,7 +42,7 @@ public class ShopDaoTest extends BaseTest {
 
 
     @Test
-    @Ignore
+
     public void testInsertShop(){
 
         Shop shop = new Shop();
@@ -55,7 +55,7 @@ public class ShopDaoTest extends BaseTest {
         shop.setOwner(owner);
         shop.setArea(area);
         shop.setShopCategory(shopCategory);
-        shop.setShopName("测试的店铺");
+        shop.setShopName("测试的店铺1");
         shop.setShopDesc("test");
         shop.setShopAddr("test");
         shop.setPhone("test");

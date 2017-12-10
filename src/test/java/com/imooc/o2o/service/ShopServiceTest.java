@@ -58,7 +58,7 @@ public class ShopServiceTest extends BaseTest {
         File shopImg = new File("/Users/baidu/work/image/xiaohuangren.jpg");
         InputStream is = new FileInputStream(shopImg);
         ImageHolder imageHolder = new ImageHolder(shopImg.getName(),is);
-        ShopExecution se = shopService.addShop(shop,is,shopImg.getName());
+        ShopExecution se = shopService.addShop(shop,imageHolder);
         assertEquals(ShopStateEnum.CHECK,se.getState());
 
 
@@ -67,13 +67,16 @@ public class ShopServiceTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void testModifyShop() throws ShopOperationException,FileNotFoundException{
         Shop shop = new Shop();
         shop.setShopId(2L);
         shop.setShopName("修改后的店铺名字");
         File shopImg = new File("F:/IdeaProjects/img/dabai.jpg");
         InputStream is = new FileInputStream(shopImg);
-        ShopExecution shopExecution = shopService.modifyShop(shop,is,"dabai.jpg");
+        ImageHolder imageHolder = new ImageHolder("dabai.jpg",is);
+
+        ShopExecution shopExecution = shopService.modifyShop(shop,imageHolder);
         System.out.println("新的图片地址为："+shopExecution.getShop().getShopImg());
 
     }

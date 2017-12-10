@@ -49,14 +49,15 @@ public class ShopServiceImpl implements ShopService{
     }
 
 
-    public Shop getByShopId(long shopId) {
-        return shopDao.queryByShopId(shopId);
-    }
 
-
-
-
-    public ShopExecution addShop(Shop shop, InputStream shopImgInputStream, String fileName) throws ShopOperationException {
+    /**
+     * 注册店铺信息
+     * @param shop 店铺
+     * @param thumbnail 店铺图片与图片名称
+     * @return
+     * @throws ShopOperationException
+     */
+    public ShopExecution addShop(Shop shop,ImageHolder thumbnail) throws ShopOperationException {
 
         // 空值判断
         if (shop == null){
@@ -76,11 +77,11 @@ public class ShopServiceImpl implements ShopService{
               throw new ShopOperationException("店铺创建失败");
           }else {
 
-              if (shopImgInputStream !=null){
+              if (thumbnail.getImage() !=null){
 
                   // 存储图片
                   try {
-                      addShopImg(shop,shopImgInputStream,fileName);
+                      addShopImg(shop,thumbnail);
 
                   }catch (Exception e){
 
@@ -105,7 +106,7 @@ public class ShopServiceImpl implements ShopService{
     }
 
 
-    public ShopExecution modifyShop(Shop shop, InputStream shopimgInputstream, String fileName) throws ShopOperationException {
+    public ShopExecution modifyShop(Shop shop, ImageHolder thumbnail) throws ShopOperationException {
 
         if (shop ==null && shop.getShopId() == null){
 
@@ -116,13 +117,13 @@ public class ShopServiceImpl implements ShopService{
             // 1.判断是否需要处理图片
 
             try {
-                if (shopimgInputstream !=null && fileName !=null && !"".equals(fileName)){
+                if (thumbnail.getImage() !=null && thumbnail.getImageName() !=null && !"".equals(thumbnail.getImageName())){
 
                     Shop tempShop = shopDao.queryByShopId(shop.getShopId());
                     if (tempShop.getShopImg() !=null){
                         ImageUtil.deleteFileOrPath(tempShop.getShopImg()); //删除图片
                     }
-                    addShopImg(shop,shopimgInputstream,fileName); //重新添加
+                    addShopImg(shop,thumbnail); //重新添加
 
                 }
 
@@ -153,12 +154,12 @@ public class ShopServiceImpl implements ShopService{
     }
 
 
-    private void addShopImg(Shop shop, InputStream shopImageInputStream,String fileName){
+    private void addShopImg(Shop shop, ImageHolder thumbnail){
 
         String dest = PathUtil.getShopImagePath(shop.getShopId()); //项目图片的子路径
-        String shopImgAddr = ImageUtil.generateThumbnail(shopImageInputStream,fileName,dest);  // 获取shop图片目录的相对值路径
+        String shopImgAddr = ImageUtil.generateThumbnail(thumbnail,dest);  // 获取shop图片目录的相对值路径
 
-        shop.setShopImg(shopImgAddr);
+        shop.setShopImg(shopImgAddr); //数据库保存图片的相对路径
 
     }
 

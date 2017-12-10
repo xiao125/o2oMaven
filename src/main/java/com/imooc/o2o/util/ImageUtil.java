@@ -53,16 +53,16 @@ public class ImageUtil {
     /**
      * 处理详情图，并返回新生成图片的相对值路径
      *
-     * @param thumbnailInputStream
+     * @param
      * @param targetAddr
      * @return
      */
-    public static String generateThumbnail(InputStream thumbnailInputStream, String fileName,String targetAddr){
+    public static String generateThumbnail(ImageHolder thumbnail,String targetAddr){
 
         //获取不重复的随机名
         String realFileName = getRandomFileName();
         // 获取文件的扩展名如png,jpg等
-        String extension = getFileExtension(fileName);
+        String extension = getFileExtension(thumbnail.getImageName());
 
         // 如果目标路径不存在，则自动创建
         makeDirPath(targetAddr);
@@ -76,7 +76,7 @@ public class ImageUtil {
         logger.debug("current complete addr is :" + PathUtil.getImgBasePath() + relativeAddr);
         // 调用Thumbnails生成带有水印的图片
         try {
-            Thumbnails.of(thumbnailInputStream).size(337,640)
+            Thumbnails.of(thumbnail.getImage()).size(337,640)
                     .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")),0.25f)
                     .outputQuality(0.9f).toFile(dest);
 
@@ -154,7 +154,7 @@ public class ImageUtil {
      * @param storePath
      */
      public static void deleteFileOrPath(String storePath){
-        File fileOrPath = new File(PathUtil.getImgBasePath() +storePath);
+        File fileOrPath = new File(PathUtil.getImgBasePath() +storePath); //全路径
         if (fileOrPath.exists()){
             if (fileOrPath.isDirectory()){
                 File files[] = fileOrPath.listFiles();

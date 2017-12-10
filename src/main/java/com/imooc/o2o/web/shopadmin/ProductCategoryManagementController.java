@@ -99,6 +99,8 @@ public class ProductCategoryManagementController {
      * 删除指定商品类别
      */
 
+    @RequestMapping(value = "/removeproductcategory",method = RequestMethod.POST)
+    @ResponseBody
     private Map<String, Object> removeProductCategory(Long productCategoryId, HttpServletRequest request) {
 
         Map<String, Object> modelMap = new HashMap<String, Object>();

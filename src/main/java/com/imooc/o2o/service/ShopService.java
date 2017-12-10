@@ -5,6 +5,7 @@ import com.imooc.o2o.dto.ShopExecution;
 import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.exceptions.ShopOperationException;
 
+import java.awt.*;
 import java.io.File;
 import java.io.InputStream;
 
@@ -24,14 +25,6 @@ public interface ShopService {
      ShopExecution getShopList(Shop shopCondition,int pageIndex,int pageSize);
 
 
-    /**
-     * 通过店铺Id获取店铺信息
-     * @param shopId
-     * @return
-     */
-    Shop getByShopId(long shopId);
-
-
 
     /**
      * 注册店铺信息，包括图片处理
@@ -40,18 +33,16 @@ public interface ShopService {
      * @return
      * @throws ShopOperationException
      */
-    ShopExecution addShop(Shop shop, InputStream shopImgInputStream,String fileName) throws ShopOperationException;
+    ShopExecution addShop(Shop shop, ImageHolder imageHolder) throws ShopOperationException;
 
 
     /**
      * 更新店铺信息，包括对图片的处理
      * @param shop
-     * @param shopimgInputstream
-     * @param fileName
      * @return
      * @throws ShopOperationException
      */
-    ShopExecution  modifyShop(Shop shop,InputStream shopimgInputstream,String fileName) throws ShopOperationException;
+    ShopExecution  modifyShop(Shop shop,ImageHolder imageHolder) throws ShopOperationException;
 
 
     /**
