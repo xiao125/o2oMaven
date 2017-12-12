@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.imooc.o2o.dto.ImageHolder;
 import com.imooc.o2o.dto.ProductExecution;
 import com.imooc.o2o.entity.Product;
+import com.imooc.o2o.entity.ProductCategory;
 import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.enums.ProductStateEnum;
 import com.imooc.o2o.exceptions.ProductOperationException;
@@ -14,10 +15,7 @@ import com.imooc.o2o.util.HttpServletRequestUtil;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -44,6 +42,36 @@ public class ProductManagementController {
 
     // 支持上传商品详情图的最大数量
     private static final int IMAGEMAXCOUNT =6;
+
+
+
+    @RequestMapping(value = "/getproductbyid",method = RequestMethod.GET)
+    @ResponseBody
+    private Map<String,Object> getProductById(@RequestParam Long productId){
+
+        Map<String,Object> modelMap = new HashMap<String, Object>();
+        //非空判断
+        if (productId > -1){
+            //获取商品信息
+            Product product = productService.getProductById(productId);
+            //查询指定某个店铺下的所有商品类别信息
+            List<ProductCategory> productCategoryList = productCategoryService.
+                    getProductCategoryList(product.getShop().getShopId());
+
+            modelMap.put("product",product);
+            modelMap.put("productCategoryList",productCategoryList);
+            modelMap.put("success",true);
+
+        }else {
+            modelMap.put("success",false);
+            modelMap.put("errMsg","empty productId");
+        }
+
+        return modelMap;
+
+    }
+
+
 
 
     @RequestMapping(value = "/addproduct",method = RequestMethod.POST)

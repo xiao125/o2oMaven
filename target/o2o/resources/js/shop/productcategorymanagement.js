@@ -81,12 +81,16 @@ $(function () {
         });
     });
 
+    //删除按钮分两种（1.列表出现的 2.通过添加按钮动态生成的）
+
+    //第二种，直接删除，因为没有存储
     $('.category-wrap').on('click','.row-product-category.temp .delete',
     function (e) {
         console.log($(this).parent().parent());
         $(this).parent().parent().remove();
     });
 
+    //第一种
     $('.category-wrap').on('click','.row-product-category.now .delete',
     function (e) {
         var target = e.currentTarget;

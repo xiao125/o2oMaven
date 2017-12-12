@@ -32,6 +32,15 @@ public class ProductServiceImpl implements ProductService {
 
 
     /**
+     * 通过商品Id查询唯一的商品信息
+     * @param productId
+     * @return
+     */
+    public Product getProductById(long productId) {
+        return productDao.queryProductById(productId);
+    }
+
+    /**
      * 商品添加
      * @param product
      * @param   thumbnail 缩略图 ,缩略图名称

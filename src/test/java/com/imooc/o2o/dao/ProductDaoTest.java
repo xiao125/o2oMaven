@@ -3,13 +3,17 @@ package com.imooc.o2o.dao;
 import com.imooc.o2o.BaseTest;
 import com.imooc.o2o.entity.Product;
 import com.imooc.o2o.entity.ProductCategory;
+import com.imooc.o2o.entity.ProductImg;
 import com.imooc.o2o.entity.Shop;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -28,6 +32,7 @@ public class ProductDaoTest extends BaseTest {
 
 
     @Test
+    @Ignore
     public void testAInsertProduct() throws Exception{
 
         Shop shop1 = new Shop();
@@ -79,5 +84,31 @@ public class ProductDaoTest extends BaseTest {
 
     }
 
+    @Test
+    public void testCQueryProductByProductId() throws Exception{
+        long productId =1;
+
+        ProductImg productImg1 = new ProductImg();
+        productImg1.setImgAddr("图片1");
+        productImg1.setImgDesc("测试图片1");
+        productImg1.setPriority(1);
+        productImg1.setCreateTime(new Date());
+        productImg1.setProductId(productId);
+        ProductImg productImg2 = new ProductImg();
+        productImg2.setImgAddr("图片2");
+        productImg2.setPriority(1);
+        productImg2.setCreateTime(new Date());
+        productImg2.setProductId(productId);
+        List<ProductImg> productImgList = new ArrayList<ProductImg>();
+        productImgList.add(productImg1);
+        productImgList.add(productImg2);
+
+      int effectedNum =  productImgDao.batchInsertProductImg(productImgList);
+        assertEquals(2, effectedNum);
+       Product product = productDao.queryProductById(productId);
+       //assertEquals(2,product.getProductImgList().size());
+        System.out.println("数量="+product.getProductImgList().size());
+
+    }
 
 }

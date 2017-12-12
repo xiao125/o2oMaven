@@ -15,6 +15,15 @@ public interface ProductService {
 
 
     /**
+     * 通过商品Id查询唯一的商品信息
+     * @param productId
+     * @return
+     */
+    Product getProductById(long productId);
+
+
+
+    /**
      *
      * @param product
      * @param imageHolder 缩略图 ,缩略图名称
