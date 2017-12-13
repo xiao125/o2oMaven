@@ -32,7 +32,6 @@ public class ProductDaoTest extends BaseTest {
 
 
     @Test
-    @Ignore
     public void testAInsertProduct() throws Exception{
 
         Shop shop1 = new Shop();
@@ -84,6 +83,35 @@ public class ProductDaoTest extends BaseTest {
 
     }
 
+
+    @Test
+    public void testBQueryProductList() throws Exception{
+
+        Product productCondition = new Product();
+        //分页查询,预期返回结果
+        List<Product> productList = productDao.queryProductList(productCondition,0,3);
+        System.out.println("分页数量："+productList.size());
+        assertEquals(3,productList.size());
+        // 查询名称为测试的商品总数
+        int count = productDao.queryProductCount(productCondition);
+        System.out.println("测试的商品总数："+count);
+        assertEquals(4, count);
+        //查询商品名称模糊查询，预期返回两条结果
+        productCondition.setProductName("测");
+        productList = productDao.queryProductList(productCondition,0,3);
+        System.out.println("分页数量="+productList.size());
+
+        //assertEquals(1,productList.size());
+        count = productDao.queryProductCount(productCondition);
+        System.out.println("模糊查询，名字为“测试”："+count);
+      //  assertEquals(3,count);
+
+
+
+    }
+
+
+
     @Test
     public void testCQueryProductByProductId() throws Exception{
         long productId =1;
@@ -105,7 +133,7 @@ public class ProductDaoTest extends BaseTest {
 
       int effectedNum =  productImgDao.batchInsertProductImg(productImgList);
         assertEquals(2, effectedNum);
-       Product product = productDao.queryProductById(productId);
+      Product product = productDao.queryProductById(productId);
        //assertEquals(2,product.getProductImgList().size());
         System.out.println("数量="+product.getProductImgList().size());
 

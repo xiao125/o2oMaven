@@ -25,7 +25,7 @@ public interface ProductCategoryService {
      * @param productCategoryList
      * @return
      */
-    ProductCategoryExecution batchAddProductCategory(List<ProductCategory> productCategoryList);
+    ProductCategoryExecution batchAddProductCategory(List<ProductCategory> productCategoryList) throws ProductCategoryOperationException;
 
 
     /**

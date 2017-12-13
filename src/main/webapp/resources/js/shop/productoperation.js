@@ -145,7 +145,6 @@ $(function () {
         // 将数据提交至后台处理相关操作
 
         $.ajax({
-
             url : productPostUrl,
             type : 'POST',
             data : formDate,

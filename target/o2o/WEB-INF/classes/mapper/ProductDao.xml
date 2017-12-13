@@ -50,7 +50,7 @@
         p.promotion_price,
         p.priority,
         p.create_time,
-        p.last_edit_time,
+        p.laste_dit_time,
         p.enable_status,
         p.product_category_id,
         p.shop_id,
