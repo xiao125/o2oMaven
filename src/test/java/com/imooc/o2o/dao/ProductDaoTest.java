@@ -139,4 +139,25 @@ public class ProductDaoTest extends BaseTest {
 
     }
 
+    @Test
+    public void testDUpdateProduct() throws Exception{
+
+        Product product = new Product();
+        ProductCategory pc = new ProductCategory();
+        Shop shop = new Shop();
+        shop.setShopId(1L);
+        pc.setProductCategoryId(1L);
+        product.setProductId(1L);
+        product.setShop(shop);
+        product.setProductName("第二个");
+        product.setProductCategory(pc);
+        // 修改productId为1的商品的名称
+        // 以及商品类别并校验影响的行数是否为1
+       int effectedNum = productDao.updateProduct(product);
+       System.out.println("影响行数："+effectedNum);
+        assertEquals(1,effectedNum);
+    }
+
+
+
 }

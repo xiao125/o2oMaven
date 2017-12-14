@@ -267,12 +267,8 @@ public class ProductManagementController {
             modelMap.put("success",false);
             modelMap.put("errMsg",e.toString());
             return modelMap;
-
         }
-
-
         try {
-
             String productStr = HttpServletRequestUtil.getString(request,"productStr");
             // 尝试获取前端传过来的表单string流并将其转换成Product实体类
             product = mapper.readValue(productStr,Product.class);
@@ -292,6 +288,7 @@ public class ProductManagementController {
                 product.setShop(currentShop);
                 // 开始进行商品信息变更操作
               ProductExecution pe =  productService.modifyProduct(product,thumbnail,productImgList);
+              System.out.println("商品信息变更操作:"+pe.getState());
                 if (pe.getState() == ProductStateEnum.SUCCESS.getState()){
                     modelMap.put("success",true);
 

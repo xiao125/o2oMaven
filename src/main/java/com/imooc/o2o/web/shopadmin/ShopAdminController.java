@@ -33,6 +33,7 @@ public class ShopAdminController {
     }
 
 
+    //商品分类管理页面： http://localhost:8080/o2oMaven/shopadmin/productcategorymanagement
     @RequestMapping(value = "/productcategorymanagement",method =RequestMethod.GET)
     public String productCategoryManage(){
 
@@ -41,12 +42,17 @@ public class ShopAdminController {
 
     }
 
+
+    // 添加页面： http://localhost:8080/o2oMaven/shopadmin/productoperation
+    //编辑页面 ：http://localhost:8080/o2oMaven/shopadmin/productoperation?productId=1
     @RequestMapping(value = "/productoperation")
     public String productOperation() {
         // 转发至商品添加/编辑页面
         return "shop/productoperation";
     }
 
+
+    //http://localhost:8080/o2oMaven/shopadmin/productmanagement
     @RequestMapping(value = "/productmanagement")
     public String productManagement(){
 
