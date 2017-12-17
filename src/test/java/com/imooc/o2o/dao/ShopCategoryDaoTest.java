@@ -25,7 +25,6 @@ public class ShopCategoryDaoTest extends BaseTest {
     private ProductCategoryDao productCategoryDao;
 
     @Test
-    @Ignore
     public void testQueryShopCategory(){
 
         List<ShopCategory> shopCategoryList = shopCategoryDao.queryShopCategory(null);
