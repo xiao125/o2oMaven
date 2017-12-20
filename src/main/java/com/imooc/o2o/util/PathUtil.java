@@ -13,11 +13,11 @@ public class PathUtil {
         String basePath="";
         if (os.toLowerCase().startsWith("win")){ //如果是windows,保存在一个目录下
 
-            basePath = "F:/IdeaProjects/img/";
+            basePath = "F:/IdeaProjects/img";
 
 
         }else {
-            basePath = "Users/baidu/work/image";
+            basePath = "/Users/baidu/work/image";
         }
         basePath =basePath.replace("/",seperator);//替换“/”分隔符
         return basePath;
@@ -26,7 +26,7 @@ public class PathUtil {
     //项目图片的子路径
     public static String getShopImagePath(long shopId){
         // 获取shop图片目录的相对值路径
-        String imagePath = "upload/images/item/shop/"+shopId+"/";
+        String imagePath = "/upload/images/item/shop/"+shopId+"/";
         return imagePath.replace("/",seperator);
 
 

@@ -7,8 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d17b375e-47df-457a-a8ad-898bb9fdfabc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ProductDetailController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/shopDetailController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/productdetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shopdetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/frontend/productdetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/frontend/shopdetail.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/productdetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shopdetail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/PathUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/PathUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/FrontendController.java" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/FrontendController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shoplist.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shoplist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/o2o/WEB-INF/classes/mapper/ProductDao.xml" afterPath="$PROJECT_DIR$/target/o2o/WEB-INF/classes/mapper/ProductDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/o2o/WEB-INF/html/frontend/index.html" afterPath="$PROJECT_DIR$/target/o2o/WEB-INF/html/frontend/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/o2o/resources/js/common/common.js" afterPath="$PROJECT_DIR$/target/o2o/resources/js/common/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/o2o/resources/js/frontend/shoplist.js" afterPath="$PROJECT_DIR$/target/o2o/resources/js/frontend/shoplist.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,75 +46,19 @@
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FrontendController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/FrontendController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeadLineDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/HeadLineDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopListController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ShopListController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shoplist.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shoplist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shoplist.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shoplist.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="103" column="19" lean-forward="true" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getshopbyid</find>
-      <find>shopoperation</find>
-      <find>getshopmanagementinfo</find>
       <find>row-product-category.temp</find>
       <find>row-product-category</find>
       <find>addproduct</find>
@@ -123,7 +85,10 @@
       <find>shoplist-search-div</find>
       <find>init</find>
       <find>infinite-scroll-bottom</find>
+      <find>listproductsbyshop</find>
       <find>listshopspageinfo</find>
+      <find>productdetail</find>
+      <find>listproductdetailpageinfo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,14 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ProductCategoryDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ProductCategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ProductCategoryManagementController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productcategorymanagement.js" />
-        <option value="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ProductImgDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/enums/ProductStateEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dto/ProductExecution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/exceptions/ProductOperationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ShopManagementController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imooc/o2o/service/ShopServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ShopDaoTest.java" />
@@ -155,13 +112,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ShopServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ProductCategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ProductService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ProductImgDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductImgDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ProductDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/shopadmin/ProductManagementController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imooc/o2o/service/ProductServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productoperation.js" />
@@ -181,16 +136,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/MainPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/frontend/index.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/index.js" />
         <option value="$PROJECT_DIR$/.idea/artifacts/o2oMaven_war.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ShopListController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/FrontendController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shoplist.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/PathUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ShopListController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shoplist.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/shopDetailController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shopdetail.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shopdetail.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ProductDetailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/FrontendController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/productdetail.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/productdetail.js" />
       </list>
     </option>
   </component>
@@ -229,8 +194,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="345" />
-    <option name="y" value="43" />
+    <option name="x" value="305" />
+    <option name="y" value="53" />
     <option name="width" value="1429" />
     <option name="height" value="925" />
   </component>
@@ -251,6 +216,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,6 +287,15 @@
               <item name="o2o" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o2oMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o2oMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="o2o" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="o2oMaven" type="b2602c69:ProjectViewProjectNode" />
@@ -434,6 +410,16 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="o2oMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="o2oMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,9 +483,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,10 +502,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\ideaPreojects\o2oMaven\src\main\webapp\resources\css\frontend" />
+      <recent name="F:\ideaPreojects\o2oMaven\src\main\webapp\WEB-INF\html\frontend" />
+      <recent name="F:\ideaPreojects\o2oMaven\src\main\webapp\resources\js\frontend" />
       <recent name="F:\IdeaProjects\o2oMaven\src\main\webapp\resources\css\frontend" />
       <recent name="F:\IdeaProjects\o2oMaven\src\main\webapp\WEB-INF" />
-      <recent name="F:\ideaPreojects\o2oMaven\src\main\webapp\WEB-INF\html\shop" />
-      <recent name="F:\ideaPreojects\o2oMaven\src\test\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1163,6 +1147,7 @@
       <workItem from="1513506509247" duration="2119000" />
       <workItem from="1513564171317" duration="10847000" />
       <workItem from="1513667621162" duration="6215000" />
+      <workItem from="1513732089143" duration="19640000" />
     </task>
     <servers />
   </component>
@@ -1199,7 +1184,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181747000" />
+    <option name="totallyTimeSpent" value="201387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1211,7 +1196,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="345" y="43" width="1429" height="925" extended-state="0" />
+    <frame x="305" y="53" width="1429" height="925" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2923077" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
@@ -1223,18 +1208,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10310966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25128207" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27122942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26869455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18657938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15082383" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16223067" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5302782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19503286" sideWeight="0.4869281" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19649379" sideWeight="0.4869281" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19288956" sideWeight="0.5130719" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1299,7 +1284,7 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1308,301 +1293,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AreaDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/HeadLineDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ShopCategoryDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ShopCategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ProductCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ShopCategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="25" column="70" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HeadLineDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/imooc/o2o/service/HeadLineServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/HeadLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/frontend/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3680">
-          <caret line="166" column="38" lean-forward="false" selection-start-line="166" selection-start-column="38" selection-end-line="166" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1302">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/o2o/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1449">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2541">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/PathUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/o2oMaven_war.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/o2oMaven_war_exploded.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="70" lean-forward="true" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/jsLibraryMappings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/imooc/o2o/dao/ShopDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/HeadLineServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/AreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/ShopCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ShopCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-          <folding>
-            <marker date="1513567394586" expanded="true" signature="311:981" ph="SELECT shop_... tb_shop_category" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1337">
-          <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
-          <folding>
-            <marker date="1513565083298" expanded="true" signature="1766:2195" ph="INSERT INTO tb_shop" />
-            <marker date="1513565083298" expanded="true" signature="2292:3141" ph="UPDATE tb_sh... " />
-            <marker date="1513565083298" expanded="true" signature="3241:3707" ph="SELECT s.sho... tb_shop" />
-            <marker date="1513565083298" expanded="true" signature="3786:5588" ph="SELECT s.sho... tb_shop" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/frontend/shoplist.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/superadmin/AreaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/MainPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1631,19 +1325,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ShopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="930" column="0" lean-forward="false" selection-start-line="930" selection-start-column="0" selection-end-line="930" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1651,48 +1336,396 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shoplist.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="67" />
+        <state relative-caret-position="69">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shoplist.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/util/PathUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="103" column="19" lean-forward="true" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+        <state relative-caret-position="302">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ShopListController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/HeadLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+        <state relative-caret-position="161">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2051">
+          <caret line="122" column="18" lean-forward="true" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1513565083298" expanded="true" signature="1766:2195" ph="INSERT INTO tb_shop" />
+            <marker date="1513565083298" expanded="true" signature="2292:3141" ph="UPDATE tb_sh... " />
+            <marker date="1513565083298" expanded="true" signature="3241:3707" ph="SELECT s.sho... tb_shop" />
+            <marker date="1513565083298" expanded="true" signature="3786:5588" ph="SELECT s.sho... tb_shop" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/FrontendController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="391">
+          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/HeadLineDao.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/AreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="56" column="56" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ProductCategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ProductCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/impl/ShopCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/ProductCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/context/request/async/WebAsyncUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/context/request/async/StandardServletAsyncWebRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#1699#1700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/context/request/async/WebAsyncManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="405" column="0" lean-forward="false" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="532" column="0" lean-forward="false" selection-start-line="532" selection-start-column="0" selection-end-line="532" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="479" column="44" lean-forward="true" selection-start-line="479" selection-start-column="44" selection-end-line="479" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/frontend/shopdetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shoplist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="43" column="67" lean-forward="true" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ShopListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1372#1388#0" expanded="true" />
+            <element signature="e#3245#3261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shoplist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="134" column="68" lean-forward="false" selection-start-line="134" selection-start-column="62" selection-end-line="134" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/shopDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="40" column="52" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shopdetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1146">
+          <caret line="125" column="48" lean-forward="false" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/frontend/productdetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shopdetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="151" column="68" lean-forward="false" selection-start-line="151" selection-start-column="55" selection-end-line="151" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/ProductDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/frontend/productdetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/productdetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="51" column="79" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/o2o/web/frontend/FrontendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AreaDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1511408026328" expanded="true" signature="287:392" ph="select area_... tb_area" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HeadLineDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <marker date="1513563863746" expanded="true" signature="299:669" ph="SELECT line_... tb_head_line" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <marker date="1512814521446" expanded="true" signature="345:528" ph="SELECT produ... tb_product_category" />
+            <marker date="1512814521446" expanded="true" signature="1135:1248" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1643">
+          <caret line="138" column="34" lean-forward="true" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
+          <folding>
+            <marker date="1513760737948" expanded="true" signature="2190:3521" ph="SELECT produ... tb_product" />
+            <marker date="1513760737948" expanded="true" signature="4531:5168" ph="SELECT p.pro... tb_product" />
+            <marker date="1513760737948" expanded="true" signature="5349:5776" ph="INSERT INTO tb_product" />
+            <marker date="1513760737948" expanded="true" signature="5941:6935" ph="UPDATE tb_pr... " />
+            <marker date="1513760737948" expanded="true" signature="7030:7168" ph="UPDATE tb_pr... " />
+            <marker date="1513760737948" expanded="true" signature="7226:7336" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-700">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513567394586" expanded="true" signature="311:981" ph="SELECT shop_... tb_shop_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
