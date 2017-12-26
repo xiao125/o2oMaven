@@ -25,6 +25,7 @@ public class ShopCategoryDaoTest extends BaseTest {
     private ProductCategoryDao productCategoryDao;
 
     @Test
+    @Ignore
     public void testQueryShopCategory(){
 
         List<ShopCategory> shopCategoryList = shopCategoryDao.queryShopCategory(null);
@@ -33,6 +34,7 @@ public class ShopCategoryDaoTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void testABatchInsertProductCategory(){
 
         ProductCategory productCategory = new ProductCategory();

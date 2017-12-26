@@ -92,7 +92,7 @@ public class ShopManagementController {
         Map<String,Object> modelMap = new HashMap<String, Object>();
         PersonInfo user = new PersonInfo();
         user.setUserId(1L); // Userid为1的商铺
-        user.setName("小红");
+        user.setName("V_V_Shyer");
         request.getSession().setAttribute("user",user);
         user = (PersonInfo) request.getSession().getAttribute("user");
 

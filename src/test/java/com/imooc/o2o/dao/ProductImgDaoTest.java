@@ -3,6 +3,7 @@ package com.imooc.o2o.dao;
 import com.imooc.o2o.BaseTest;
 import com.imooc.o2o.entity.ProductImg;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ public class ProductImgDaoTest extends BaseTest{
 
 
     @Test
+    @Ignore
     public void testABatchInsertProductImg() throws Exception{
 
         // productId为1的商品里添加两个详情图片记录

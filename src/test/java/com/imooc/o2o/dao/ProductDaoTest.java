@@ -32,6 +32,7 @@ public class ProductDaoTest extends BaseTest {
 
 
     @Test
+    @Ignore
     public void testAInsertProduct() throws Exception{
 
         Shop shop1 = new Shop();
@@ -85,6 +86,7 @@ public class ProductDaoTest extends BaseTest {
 
 
     @Test
+    @Ignore
     public void testBQueryProductList() throws Exception{
 
         Product productCondition = new Product();
@@ -113,6 +115,7 @@ public class ProductDaoTest extends BaseTest {
 
 
     @Test
+    @Ignore
     public void testCQueryProductByProductId() throws Exception{
         long productId =1;
 
@@ -140,6 +143,7 @@ public class ProductDaoTest extends BaseTest {
     }
 
     @Test
+    @Ignore
     public void testDUpdateProduct() throws Exception{
 
         Product product = new Product();

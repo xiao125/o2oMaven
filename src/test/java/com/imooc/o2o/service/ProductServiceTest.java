@@ -8,6 +8,7 @@ import com.imooc.o2o.entity.ProductCategory;
 import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.enums.ProductStateEnum;
 import com.imooc.o2o.exceptions.ShopOperationException;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -30,6 +31,7 @@ public class ProductServiceTest extends BaseTest {
 
 
     @Test
+    @Ignore
     public void testModifyProduct() throws ShopOperationException,FileNotFoundException{
 
         //创建shopId为1且productCategoryId为1的商品实例并给其成员变量赋值

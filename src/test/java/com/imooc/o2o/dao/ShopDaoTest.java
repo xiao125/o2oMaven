@@ -24,6 +24,7 @@ public class ShopDaoTest extends BaseTest {
     private ShopDao shopDao;
 
     @Test
+    @Ignore
     public void testQueryShopListAndCount(){
 
         Shop shopCondition = new Shop();
@@ -42,7 +43,7 @@ public class ShopDaoTest extends BaseTest {
 
 
     @Test
-
+    @Ignore
     public void testInsertShop(){
 
         Shop shop = new Shop();

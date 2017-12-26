@@ -2,6 +2,7 @@ package com.imooc.o2o.service;
 
 import com.imooc.o2o.BaseTest;
 import com.imooc.o2o.entity.HeadLine;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -17,6 +18,7 @@ public class HeadLineServiceTest extends BaseTest {
     private HeadLineService headLineService;
 
     @Test
+    @Ignore
     public void testGetHeadLineList() throws IOException {
 
         List<HeadLine> headLineList = headLineService.getHeadLineList(new HeadLine());

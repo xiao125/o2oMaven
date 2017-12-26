@@ -32,6 +32,7 @@ public class ProductCategoryDaoTest extends BaseTest {
 
 
     @Test
+    @Ignore
     public void testCDeleteProductCategory() throws Exception{
 
         long shopId =1;

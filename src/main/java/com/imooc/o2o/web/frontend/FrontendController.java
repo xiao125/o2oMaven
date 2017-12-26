@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Created by Administrator on 2017/12/16.
  */
 @Controller
-@RequestMapping(value = "/frontend")
+@RequestMapping("/frontend")
 public class FrontendController {
 
     /**
@@ -20,7 +20,6 @@ public class FrontendController {
     private String index(){
 
         return "frontend/index";
-
     }
 
     /**
