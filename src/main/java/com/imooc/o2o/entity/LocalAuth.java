@@ -8,7 +8,7 @@ import java.util.Date;
 public class LocalAuth {
 
     // 主键ID
-    private Long loaclAuthId;
+    private Long localAuthId;
     // 帐号
     private String username;
     // 密码
@@ -21,12 +21,12 @@ public class LocalAuth {
     // 个人信息，关系为一一对应
     private PersonInfo personInfo;
 
-    public Long getLoaclAuthId() {
-        return loaclAuthId;
+    public Long getLocalAuthId() {
+        return localAuthId;
     }
 
-    public void setLoaclAuthId(Long loaclAuthId) {
-        this.loaclAuthId = loaclAuthId;
+    public void setLocalAuthId(Long localAuthId) {
+        this.localAuthId = localAuthId;
     }
 
     public String getUsername() {

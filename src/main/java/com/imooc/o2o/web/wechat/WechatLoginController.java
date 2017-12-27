@@ -19,6 +19,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 获取关注公众号之后的微信用户信息的接口，如果在微信浏览器里访问
+ * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd7f6c5b8899fba83&redirect_uri=http://39.108.13.136/o2oMaven/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
+ * 则这里将会获取到code,之后再可以通过code获取到access_token 进而获取到用户信息
+ *
+ * @author xiangze
+ *
+ */
+
 @Controller
 @RequestMapping("wechatlogin")
 public class WechatLoginController {
@@ -79,9 +88,9 @@ public class WechatLoginController {
             PersonInfo personInfo = WechatUtil.getPersonInfoFromRequest(user);
             auth = new WechatAuth();
             auth.setOpenId(openId);
-            if (FRONTEND.equals(roleType)){
+            if (FRONTEND.equals(roleType)){ //代表用户是顾客，1.顾客 2.店家 3.超级管理员
                 personInfo.setUserType(1);
-            }else {
+            }else { //否则是店家
 
                 personInfo.setUserType(2);
             }
@@ -99,7 +108,7 @@ public class WechatLoginController {
         }
 
         //若用户点击的是前端展示系统按钮则进入前端展示系统
-        if (FRONTEND.equals(roleType)){
+        if (FRONTEND.equals(roleType)){ //顾客
             return "frontend/index";
         }else {
             return "shop/shoplist";
