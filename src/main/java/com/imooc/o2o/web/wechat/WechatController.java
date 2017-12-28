@@ -1,6 +1,6 @@
 package com.imooc.o2o.web.wechat;
 
-import com.imooc.o2o.util.SignUtil;
+import com.imooc.o2o.util.wechat.SignUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
