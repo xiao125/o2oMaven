@@ -1,5 +1,6 @@
 package com.imooc.o2o.cache;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import redis.clients.jedis.BinaryClient.LIST_POSITION;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -1089,7 +1090,7 @@ public class JedisUtil {
 		 * @param key
 		 *  int
 		 *            index 位置
-		 * @param String
+		 * @       String
 		 *            value 值
 		 * @return 状态码
 		 */
@@ -1103,9 +1104,9 @@ public class JedisUtil {
 		 * @param key
 		 *  LIST_POSITION
 		 *            前面插入或后面插入
-		 * @param String
+		 * @     String
 		 *            pivot 相对位置的内容
-		 * @param String
+		 * @     String
 		 *            value 插入的内容
 		 * @return 记录总数
 		 */
@@ -1166,7 +1167,7 @@ public class JedisUtil {
 		/**
 		 * 将List中的第一条记录移出List
 		 * 
-		 * @param String
+		 * @    String
 		 *            key
 		 * @return 移出的记录
 		 */
