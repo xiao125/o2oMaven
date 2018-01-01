@@ -1,6 +1,4 @@
 package com.imooc.o2o.cache;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 import redis.clients.jedis.BinaryClient.LIST_POSITION;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -95,26 +93,22 @@ public class JedisUtil {
 			return stata;
 		}
 
+
 		/**
-		 * 更改key
-		 * 
-		 * @param
-		 *            oldkey
-		 * @param
-		 *            newkey
+		 *  更改key
+		 * @param oldkey
+		 * @param newkey
 		 * @return 状态码
 		 */
 		public String rename(String oldkey, String newkey) {
 			return rename(SafeEncoder.encode(oldkey), SafeEncoder.encode(newkey));
 		}
 
+
 		/**
 		 * 更改key,仅当新key不存在时才执行
-		 * 
-		 * @param
-		 *            oldkey
-		 * @param
-		 *            newkey
+		 * @param oldkey
+		 * @param newkey
 		 * @return 状态码
 		 */
 		public long renamenx(String oldkey, String newkey) {
@@ -124,13 +118,11 @@ public class JedisUtil {
 			return status;
 		}
 
+
 		/**
 		 * 更改key
-		 * 
-		 * @param
-		 *            oldkey
-		 * @param
-		 *            newkey
+		 * @param oldkey
+		 * @param newkey
 		 * @return 状态码
 		 */
 		public String rename(byte[] oldkey, byte[] newkey) {
@@ -140,13 +132,11 @@ public class JedisUtil {
 			return status;
 		}
 
+
 		/**
 		 * 设置key的过期时间，以秒为单位
-		 * 
-		 * @param
-		 *            key
-		 * @param
-		 *
+		 * @param key
+		 * @param seconds 时间,已秒为单位
 		 * @return 影响的记录数
 		 */
 		public long expired(String key, int seconds) {
@@ -156,13 +146,11 @@ public class JedisUtil {
 			return count;
 		}
 
+
 		/**
 		 * 设置key的过期时间,它是距历元（即格林威治标准时间 1970 年 1 月 1 日的 00:00:00，格里高利历）的偏移量。
-		 * 
-		 * @param
-		 *            key
-		 * @param
-		 *
+		 * @param key
+		 * @param timestamp 时间,已秒为单位
 		 * @return 影响的记录数
 		 */
 		public long expireAt(String key, long timestamp) {
@@ -172,11 +160,10 @@ public class JedisUtil {
 			return count;
 		}
 
+
 		/**
-		 * 查询key的过期时间
-		 * 
-		 * @param
-		 *            key
+		 *  查询key的过期时间
+		 * @param key
 		 * @return 以秒为单位的时间表示
 		 */
 		public long ttl(String key) {
@@ -187,9 +174,9 @@ public class JedisUtil {
 			return len;
 		}
 
+
 		/**
 		 * 取消对key过期时间的设置
-		 * 
 		 * @param key
 		 * @return 影响的记录数
 		 */
@@ -200,11 +187,10 @@ public class JedisUtil {
 			return count;
 		}
 
+
 		/**
 		 * 删除keys对应的记录,可以是多个key
-		 * 
-		 * @
-		 *            ... keys
+		 * @param keys
 		 * @return 删除的记录数
 		 */
 		public long del(String... keys) {
@@ -214,11 +200,10 @@ public class JedisUtil {
 			return count;
 		}
 
+
 		/**
 		 * 删除keys对应的记录,可以是多个key
-		 * 
-		 * @ String
-		 *            ... keys
+		 * @param keys
 		 * @return 删除的记录数
 		 */
 		public long del(byte[]... keys) {
@@ -228,12 +213,11 @@ public class JedisUtil {
 			return count;
 		}
 
+
 		/**
 		 * 判断key是否存在
-		 * 
-		 * @param
-		 *            key
-		 * @return boolean
+		 * @param key String
+		 * @return  boolean
 		 */
 		public boolean exists(String key) {
 			// ShardedJedis sjedis = getShardedJedis();
@@ -243,13 +227,12 @@ public class JedisUtil {
 			return exis;
 		}
 
+
 		/**
 		 * 对List,Set,SortSet进行排序,如果集合数据较大应避免使用这个方法
-		 * 
-		 * @param
-		 *            key
+		 * @param key
 		 * @return List<String> 集合的全部记录
-		 **/
+		 */
 		public List<String> sort(String key) {
 			// ShardedJedis sjedis = getShardedJedis();
 			Jedis sjedis = getJedis();
@@ -258,15 +241,13 @@ public class JedisUtil {
 			return list;
 		}
 
+
 		/**
 		 * 对List,Set,SortSet进行排序或limit
-		 * 
-		 * @param
-		 *            key
-		 * @param
-		 *            parame 定义排序类型或limit的起止位置.
-		 * @return List<String> 全部或部分记录
-		 **/
+		 * @param key
+		 * @param parame  SortingParams parame 定义排序类型或limit的起止位置.
+		 * @return  List<String> 全部或部分记录
+		 */
 		public List<String> sort(String key, SortingParams parame) {
 			// ShardedJedis sjedis = getShardedJedis();
 			Jedis sjedis = getJedis();
@@ -275,13 +256,12 @@ public class JedisUtil {
 			return list;
 		}
 
+
 		/**
 		 * 返回指定key存储的类型
-		 * 
-		 * @param
-		 *            key
-		 * @return String string|list|set|zset|hash
-		 **/
+		 * @param key
+		 * @return  String string|list|set|zset|hash
+		 */
 		public String type(String key) {
 			// ShardedJedis sjedis = getShardedJedis();
 			Jedis sjedis = getJedis();
@@ -290,11 +270,11 @@ public class JedisUtil {
 			return type;
 		}
 
+
 		/**
 		 * 查找所有匹配给定的模式的键
-		 * 
-		 *
-		 * key的表达式,*表示多个，？表示一个
+		 * @param pattern   key的表达式,*表示多个，？表示一个
+		 * @return
 		 */
 		public Set<String> keys(String pattern) {
 			Jedis jedis = getJedis();

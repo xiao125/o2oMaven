@@ -19,6 +19,7 @@ import java.net.URL;
 import java.security.SecureRandom;
 
 /**
+ * 微信工具
  * Created by Administrator on 2017/12/26.
  */
 public class WechatUtil {

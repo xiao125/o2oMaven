@@ -27,13 +27,13 @@ import java.util.List;
 
 @Service
 public class AreaServiceImpl implements AreaService {
-//@Autowired : 运行时AreaDao自动注入到里面来
+
 
     @Autowired
     private AreaDao areaDao;
 
+    @Autowired
     private JedisUtil.Keys jedisKeys;
-
 
     @Autowired
     private JedisUtil.Strings jedisStrings;

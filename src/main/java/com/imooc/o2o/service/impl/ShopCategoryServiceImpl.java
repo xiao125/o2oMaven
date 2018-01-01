@@ -34,8 +34,9 @@ public class ShopCategoryServiceImpl implements ShopCategoryService {
     @Autowired
     private ShopCategoryService shopCategoryService;
 
+    @Autowired
     private JedisUtil.Keys jedisKeys;
-
+    @Autowired
     private JedisUtil.Strings jedisStrings;
 
     private static Logger logger = LoggerFactory.getLogger(ShopCategoryServiceImpl.class);

@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 获取关注公众号之后的微信用户信息的接口，如果在微信浏览器里访问
- * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd7f6c5b8899fba83&redirect_uri=http://39.108.13.136/o2oMaven/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
+  https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxbba1b1cf9e21e791&redirect_uri=http://39.108.13.136/o2oMaven/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
  * 则这里将会获取到code,之后再可以通过code获取到access_token 进而获取到用户信息
  *
  * @author xiangze
@@ -75,6 +75,7 @@ public class WechatLoginController {
                 log.debug("weixin login user:" + user.toString());
                 request.getSession().setAttribute("openId",openId);
                // 通过openId查找平台对应的微信帐号
+
                 auth = wechatAuthService.getWechatAuthByOpenId(openId);
 
             }catch (Exception e){
@@ -105,6 +106,9 @@ public class WechatLoginController {
                 personInfo = personInfoService.getPersonInfoById(auth.getPersonInfo().getUserId());
                 request.getSession().setAttribute("user",personInfo);
             }
+        }else if (auth !=null){
+
+            request.getSession().setAttribute("user",auth.getPersonInfo());
         }
 
         //若用户点击的是前端展示系统按钮则进入前端展示系统

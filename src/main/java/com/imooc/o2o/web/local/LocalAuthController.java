@@ -21,17 +21,18 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "local", method = { RequestMethod.GET, RequestMethod.POST })
 public class LocalAuthController {
+
 	@Autowired
 	private LocalAuthService localAuthService;
 
-	@RequestMapping(value = "/bindlocalauth", method = RequestMethod.POST)
-	@ResponseBody
 	/**
 	 * 将用户信息与平台帐号绑定
-	 * 
+	 *
 	 * @param request
 	 * @return
 	 */
+	@RequestMapping(value = "/bindlocalauth", method = RequestMethod.POST)
+	@ResponseBody
 	private Map<String, Object> bindLocalAuth(HttpServletRequest request) {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		// 验证码校验
@@ -68,14 +69,16 @@ public class LocalAuthController {
 		return modelMap;
 	}
 
-	@RequestMapping(value = "/changelocalpwd", method = RequestMethod.POST)
-	@ResponseBody
+
+
 	/**
 	 * 修改密码
-	 * 
+	 *
 	 * @param request
 	 * @return
 	 */
+	@RequestMapping(value = "/changelocalpwd", method = RequestMethod.POST)
+	@ResponseBody
 	private Map<String, Object> changeLocalPwd(HttpServletRequest request) {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		// 验证码校验
@@ -161,15 +164,17 @@ public class LocalAuthController {
 		return modelMap;
 	}
 
-	@RequestMapping(value = "/logout", method = RequestMethod.POST)
-	@ResponseBody
+
+
 	/**
 	 * 当用户点击登出按钮的时候注销session
-	 * 
+	 *
 	 * @param request
 	 * @return
-	 * @throws IOException
+	 * @throws
 	 */
+	@RequestMapping(value = "/logout", method = RequestMethod.POST)
+	@ResponseBody
 	private Map<String, Object> logout(HttpServletRequest request) {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		// 将用户session置为空
